@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class P3_LongestRepeatingReplacement {
+    //OPTIMIZATION - Maintain test letter as the most freq char in window.
+    //              if any char's freq in window goes above test letter, replace test letter with that char
+    //              But also decrement
     public int characterReplacement(String s, int k) {
         if(s.length() == 1) return 1;
         char[] chars = s.toCharArray();
