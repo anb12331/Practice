@@ -49,6 +49,6 @@ class P1_BinarySearch {
                 // This gets the insertion point right on the last loop.
                 low = ++mid;
         }
-        return - 1;
+        return -mid - 1;
     }
 }
