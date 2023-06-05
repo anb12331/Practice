@@ -9,6 +9,7 @@ public class P1_MinCostToConnectPoints {
     public int minCostConnectPoints(int[][] points) {
         /**
          * TODO: Optimization - min dist can be recorded while adding to heap
+         * Check P2_NetworkDelayTime for a better implementation of Djikstra's
          */
         PriorityQueue<int[]> minHeap = new PriorityQueue<>(new Comparator<int[]>() {
             @Override
