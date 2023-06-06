@@ -1,6 +1,6 @@
 package org.neetcode.binarysearch;
 
-public class P5_BinSearchInRotated {
+class P5_BinSearchInRotated {
     //4 5 6 7 8 0 1
     //7 8 0 1 2 3 4
     //      0
