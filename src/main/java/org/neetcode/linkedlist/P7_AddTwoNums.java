@@ -1,6 +1,6 @@
 package org.neetcode.linkedlist;
 
-public class P7_AddTwoNums {
+class P7_AddTwoNums {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode res = new ListNode();
         ListNode resHead = res;
