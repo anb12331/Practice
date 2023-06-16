@@ -15,9 +15,19 @@ public class TreeNode {
         this.right = right;
     }
 
-    public static List<Integer> print(TreeNode root) {
+    public TreeNode addLeft(int val) {
+        left = new TreeNode(val);
+        return left;
+    }
+
+    public TreeNode addRight(int val) {
+        right = new TreeNode(val);
+        return right;
+    }
+
+    public static List<Integer> toListPreOrder(TreeNode root) {
         List<Integer> res = new ArrayList<>();
-        inOrderTrv(root, res);
+        preOrderTrv(root, res);
         return res;
     }
 
@@ -26,7 +36,15 @@ public class TreeNode {
             res.add(root.val);
             preOrderTrv(root.left, res);
             preOrderTrv(root.right, res);
+        } else {
+            res.add(null);
         }
+    }
+
+    public static List<Integer> toListInOrder(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        inOrderTrv(root, res);
+        return res;
     }
 
     private static void inOrderTrv(TreeNode root, List<Integer> res) {

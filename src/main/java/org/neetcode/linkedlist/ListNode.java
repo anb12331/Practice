@@ -33,4 +33,9 @@ public class ListNode {
 
         return res;
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(val);
+    }
 }
