@@ -1,11 +1,10 @@
 package org.neetcode.trie;
 
-import java.util.HashMap;
 import java.util.Map;
 
-class WordDictionary {
+class P2_WordDictionary {
     Node root;
-    public WordDictionary() {
+    public P2_WordDictionary() {
         root = new Node('-');
     }
 
@@ -54,7 +53,7 @@ class WordDictionary {
     }
     public static void main(String[] args) {
 
-        WordDictionary w = new WordDictionary();
+        P2_WordDictionary w = new P2_WordDictionary();
         /*
         String[] toAdd = new String[] {"at","and","an","add","bat"};
         
